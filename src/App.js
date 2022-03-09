@@ -1,25 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+import CheapestFastest from './components/Sorting/CheapestFastest'
+import Transfers from './components/Sorting/Transfers'
+import Ticket from './components/Ticket/Ticket'
+import { TicketContainer } from './components/Ticket/TicketContainer'
+import logo from './images/Logo.svg'
+import styles from './index.module.css'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className={styles.appWrapper}>
+      <div className={styles.transfers}>
+        <Transfers />
+      </div>
+      <div className={styles.ticketContainer}>
+        <div className={styles.tickets}>
+          <div>
+            <img src={logo} alt='logo' />
+          </div>
+          <div>
+            <CheapestFastest />
+          </div>
+          <div>
+            <TicketContainer />
+          </div>
+        </div>
+      </div>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App

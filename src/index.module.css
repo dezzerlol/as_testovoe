@@ -1,0 +1,55 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  background-color: #f3f7fa;
+  height: 100%;
+}
+
+.appWrapper {
+  margin: 0 auto;
+  width: 1200px;
+}
+.tickets {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.transfers {
+  width: 250px;
+  display: flex;
+  position: absolute;
+  margin-left: 70px;
+  margin-top: 93px;
+}
+
+
+.sortButton {
+  background-color: white;
+  width: 168px;
+  height: 50px;
+  border: 1px solid #dfe5ec;
+  font-size: 12px;
+  color: #4a4a4a;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 600;
+
+}
+
+.sortButtonActiveFirst {
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+.sortButtonThird {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.sortButtonActive {
+  background-color: #2196f3;
+  color: white;
+}
